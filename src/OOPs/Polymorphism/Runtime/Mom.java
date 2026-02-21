@@ -1,0 +1,22 @@
+package OOPs.Polymorphism.Runtime;
+
+class Mom {
+    void cook(){
+        System.out.println("Indian");
+    }
+}
+
+class Daughter extends Mom{
+    void cook(){
+        System.out.println("Chinese");
+    }
+}
+
+class Driver{
+    static void main(String[] args) {
+        Mom m = new Mom();
+        Daughter d = new Daughter();
+        m.cook();
+        d.cook();
+    }
+}
